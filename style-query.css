@@ -22,6 +22,24 @@ body{
     in quella cella cosa c'è, tanti elementi quante sono le colonne */
 }
 
+/* ----- media query ------ */
+@media (max-width: 480px) {
+    .grid{
+        /* background-color: crimson; */
+        grid-template-rows: 100px 50px 400px 50px 50px 100px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+                             "l-s"
+                             "main"
+                             "r-s-t"
+                             "r-s-b"
+                             "footer" ;
+
+    }
+  }
+
+
+
 header{
     border-color: violet;
     grid-area: header;
