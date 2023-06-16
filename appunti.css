@@ -1,0 +1,96 @@
+
+body *{
+    box-sizing: border-box;
+    border: solid 2px;
+}
+
+body{
+    margin: 0px;
+}
+
+.grid{
+
+}
+
+header{
+    border-color: violet;
+}
+
+main {
+    border-color: yellow;
+}
+
+.left-side{
+    border-color: red;
+}
+
+
+.right-side-top{
+    border-color: pink;    
+}
+
+.right-side-bottom{
+    border-color: red;
+}
+
+footer{
+    border-color: blue;
+}
+
+-------------------
+
+
+
+body *{
+    box-sizing: border-box;
+    border: solid 5px;
+}
+
+body{
+    margin: 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-areas:    "header header header" 
+                            "l-s main r-s-t" 
+                            "l-s main r-s-b" 
+                            "footer footer footer"; 
+
+/*  una stringa per ognuna delle righe
+    in quella cella cosa c'è, tanti elementi quante sono le colonne */
+}
+
+header{
+    border-color: violet;
+    grid-area: header;
+}
+
+.left-side{
+    border-color: red;
+    grid-area: l-s;
+}
+
+main {
+    border-color: yellow;
+    grid-area: main;
+}
+
+.right-side-top{
+    border-color: pink;
+    grid-area: r-s-t;    
+}
+
+.right-side-bottom{
+    border-color: red;
+    grid-area: r-s-b;
+}
+
+footer{
+    border-color: blue;
+    grid-area: footer;
+}
+
+--------
